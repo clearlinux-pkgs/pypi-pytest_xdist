@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_xdist
 Version  : 2.5.0
-Release  : 96
+Release  : 97
 URL      : https://files.pythonhosted.org/packages/5d/43/9dbc32d297d6eae85d6c05dc8e8d3371061bd6cbe56a2f645d9ea4b53d9b/pytest-xdist-2.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5d/43/9dbc32d297d6eae85d6c05dc8e8d3371061bd6cbe56a2f645d9ea4b53d9b/pytest-xdist-2.5.0.tar.gz
 Summary  : pytest xdist plugin for distributed testing and loop-on-failing modes
@@ -13,23 +13,20 @@ License  : MIT
 Requires: pypi-pytest_xdist-license = %{version}-%{release}
 Requires: pypi-pytest_xdist-python = %{version}-%{release}
 Requires: pypi-pytest_xdist-python3 = %{version}-%{release}
-Requires: execnet
-Requires: pytest-forked
+Requires: pypi(execnet)
+Requires: pypi(pytest_forked)
 BuildRequires : buildreq-distutils3
-Provides: pytest-xdist
-Provides: pytest-xdist-python
-Provides: pytest-xdist-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(execnet)
+BuildRequires : pypi(py)
 BuildRequires : pypi(pytest)
 BuildRequires : pypi(pytest_forked)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
 BuildRequires : pypi(wheel)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 pytest-xdist
@@ -74,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641482545
+export SOURCE_DATE_EPOCH=1641846519
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
