@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_xdist
 Version  : 3.1.0
-Release  : 106
+Release  : 107
 URL      : https://files.pythonhosted.org/packages/0d/e5/f7ece02dc1b4bc24a3e37be6a78251e03fff4193126d7ce126c450644696/pytest-xdist-3.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/0d/e5/f7ece02dc1b4bc24a3e37be6a78251e03fff4193126d7ce126c450644696/pytest-xdist-3.1.0.tar.gz
 Summary  : pytest xdist plugin for distributed testing, most importantly across multiple CPUs
