@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-pytest_xdist
-Version  : 3.3.0
-Release  : 110
-URL      : https://files.pythonhosted.org/packages/eb/27/91ef12c3b2e334ae8803dd461eacdb8258760f241fbbf3a4f053456fed3a/pytest-xdist-3.3.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/eb/27/91ef12c3b2e334ae8803dd461eacdb8258760f241fbbf3a4f053456fed3a/pytest-xdist-3.3.0.tar.gz
+Version  : 3.3.1
+Release  : 111
+URL      : https://files.pythonhosted.org/packages/e2/5c/eae1b20cbea054d4e11ca5cb4f9b163000e885a2ae62e433375e8cdf1097/pytest-xdist-3.3.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e2/5c/eae1b20cbea054d4e11ca5cb4f9b163000e885a2ae62e433375e8cdf1097/pytest-xdist-3.3.1.tar.gz
 Summary  : pytest xdist plugin for distributed testing, most importantly across multiple CPUs
 Group    : Development/Tools
 License  : MIT
@@ -68,10 +68,10 @@ python3 components for the pypi-pytest_xdist package.
 
 
 %prep
-%setup -q -n pytest-xdist-3.3.0
-cd %{_builddir}/pytest-xdist-3.3.0
+%setup -q -n pytest-xdist-3.3.1
+cd %{_builddir}/pytest-xdist-3.3.1
 pushd ..
-cp -a pytest-xdist-3.3.0 buildavx2
+cp -a pytest-xdist-3.3.1 buildavx2
 popd
 
 %build
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684029940
+export SOURCE_DATE_EPOCH=1684514046
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
